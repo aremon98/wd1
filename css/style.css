@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css?family=Cabin|Lobster|Montserrat&display=swap');
+
+/* Global Section */
+
+i {
+    cursor: pointer;
+}
+a {
+    font-family: Cabin , serif;
+    text-transform: uppercase;
+}
+p {
+    font-family: Montserrat,sans-serif;
+}
+
+/* Global Section */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Header Area */
+
+
+.header-area {
+  position: absolute;
+  left: 0;
+  top: 0;  
+  width: 100%;
+  z-index: 11;
+}
+.logo h1 {
+    font-size: 35px;
+    font-family: Lobster, cursive;;
+}
+.menu a {
+    font-size: 19px;
+    opacity: 0.8;
+    border-bottom:3px solid transparent;
+    position: relative;
+    color: white;
+}
+.menu a:after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 10px;
+    width: 25px;
+    height: 2px;
+    background-color: #fff;
+    transition: 0.30s;
+}
+.menu a:hover:after {
+    width: 80%;
+}
+.menu a:hover {
+    opacity: 1;
+}
+
+/* Header Area */
+
+.main-hero {
+    height: 100vh;
+    position: relative;
+    background-image: url(https://source.unsplash.com/random/);
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+}
+.main-hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(45deg, rgba(15, 32, 39, 0.904) , rgba(44, 83, 100, 0.808));
+}
+.main-hero_text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 11;
+}
+.text-middle {
+    text-align: center;
+}
+.main-hero h1 {
+    font-weight: 600;
+    margin-bottom: 22px;
+}
+.main-hero p {
+    font-size: 18px;
+    line-height: 155%;
+    margin-bottom: 20px;
+}
+.main-hero a {
+    font-size: 26px;
+    padding: 7px 36px;
+    background-color: rgba(15, 32, 39, 0.904);
+    outline: none;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    border-radius: 6px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Bloag Section START */
+
+
+.blog-section {
+    margin: 75px 0 95px 0 ;
+}
+h1.blog-section_title {
+    margin-bottom: 75px;
+}
+.alada {
+    padding: 0 20px;
+}
+.main-blog {
+    padding:0 0;
+    background-color: rgba(250, 249, 249, 0.281);
+}
+.blog-img {
+    width: 100%;
+    height: 500px;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+.blog-img img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.blog-title h2 {
+    margin-top: 25px;
+    max-width: 85%;
+}
+.authore {
+    font-weight: 600;
+}
+.authore span{
+    font-weight: bold;
+}
+.blog-meta {
+    margin: 24px 0;
+}
+.comments {
+    position: relative;
+    margin-left: 20px;
+}
+.comments:before {
+    content: "/";
+    position: absolute;
+    top: 0;
+    left: -17px;
+    padding: 0 3px;
+}
+.catagory {
+    position: relative;
+    margin-left:20px;
+}
+.catagory i {
+    padding: 0 5px;
+    font-size: 14px;
+}
+.catagory:before {
+    content: "/";
+    position: absolute;
+    top: 0;
+    left: -17px;
+    padding: 0 3px;
+}
+.share i {
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    margin: 0 3px;
+    text-align: center;
+    transition: 0.3s;
+}
+.share i.facebook:hover {
+    background-color: #4267B2;
+    color: white;
+    border-radius: 2px;
+}
+.share i.twitter:hover {
+    background-color: #1DA1F2;
+    color: white;
+    border-radius: 2px;
+}
+.share i.instagram:hover {
+    background-color: #ff002d;
+    border-radius: 2px;
+    color: white;
+}
+.share i.linkedin:hover {
+    background-color: #2867B2 ;
+    border-radius: 2px;
+    color: white;
+}
+.share i.bal:hover {
+    background-color: #1769ff;
+    border-radius: 2px;
+    color: white;
+}
+.blog-content p {
+    margin-top: 32px;
+    font-size: 18px;
+    line-height: 155%;
+}
+.left-color {
+    position: relative;
+    margin: 25px 0;
+    padding-left: 30px;
+}
+
+.left-color:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left:0px;
+    padding: 0 3px;
+    height: 100%;
+    width: 1.5px;
+    background-color: rgba(15, 32, 39, 0.904);
+    border-radius: 2px;
+}
+.blog-footer {
+    margin: 30px 0;
+}
+.blog-tag span {
+    padding: 5px 7px;
+    margin-right: 2px;
+    background-color: rgb(197, 193, 193);
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+
+/* blog-comment */
+
+
+.blog-comment .comments-title{
+    margin: 45px 0 50px 0;
+}
+.blog-comment .comments-title h4 {
+    font-size: 28px;
+    font-weight: bold;
+}
+.blog-comment .comments-title span {
+    color: blue;
+    font-size: 28px;
+    vertical-align: middle;
+
+}
+.main-comment {
+    padding: 0 0 0 25px;
+}
+.comment {
+    margin-bottom: 45px ;
+}
+.comment .img {
+
+    margin-right: 15px;
+}
+.comment .img .profile-img {
+    height: 80px;
+    width: 80px;
+}
+
+.comment .profile-img img {
+    height: 100%;
+    width: 100%;
+    
+    border-radius: 50%;
+}
+.comment-details .name h4{
+    font-size: 32px;
+    font-weight: 600;
+    padding: 8px 0;
+    margin-bottom: 1px;
+}
+.comment-details .date {
+    margin-bottom: 22px ;
+    font-size: 14px;
+
+}
+.comment-details .date a {
+    text-decoration: underline;
+    margin-left: 15px;
+}
+.comment-text p {
+    font-size: 14px;
+    line-height: 155%;
+}
+
+/* Bloag Section End */
+
+
+
+
+/* Aside Area Start*/
+.new-post-header {
+    position: relative;
+    padding-left: 18px;
+}
+.new-post-header::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    height: 73%;
+    width: 6px;
+    background-color: rgba(15, 32, 39, 0.904);
+}
+
+.new-blog {
+    padding-left: 20px;
+    padding-right: 3px;
+}
+.card img,
+.card h4 {
+    cursor: pointer;
+}
+.card h4:hover {
+    color: blue;
+}
+
+/* Aside Area End*/
